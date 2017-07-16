@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wikipedia App</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="initial-part row">
+            <div class="col-xs-12 random-link">
+                <a class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 text-center" id="random-article" href="ttps://en.wikipedia.org/wiki/Special:Random" target="_blank">Click Here For A Random Wikipedia Article</a>
+            </div>
+            <form class="form-query">
+                <div class="form-group col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3">
+                    <input type="text" id="info" class="form-control center-block" placeholder="Search Wikipedia">
+                    <!--<button type="button" id="buttonClick">Search</button>-->
+                </div>
+            </form>
+        </div>
+
+        <div id="container" class="row">
+
+        </div>
+    </div>
+
+    <footer class="footer"><p class="text-center">U. Hanchar 2016</p></footer>
+
+
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/app-compiled.js"></script>
+</body>
+</html>

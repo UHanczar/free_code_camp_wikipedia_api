@@ -1,0 +1,22 @@
+{
+  "name": "fcc_wiki_app",
+  "description": "my wikipedia app for FreeCodeCamp",
+  "main": "index.js",
+  "authors": [
+    "U. Hanchar"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "^3.1.1",
+    "bootstrap": "3.3.7",
+    "normalize-css": "normalize.css#^5.0.0"
+  }
+}

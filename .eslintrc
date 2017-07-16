@@ -1,0 +1,22 @@
+{
+  "extends": "airbnb/base",
+  "plugins": [
+      "react",
+      "jsx-a11y",
+      "import",
+      "jquery"
+  ],
+  "env": {
+  "browser": true,
+  "commonjs": true,
+  "es6": true,
+  "jquery": true
+  },
+  "rules": {
+    "jquery-dollar": ["error", {"ignoreProperties": true}],
+    "eslint linebreak-style": ["error", {"ignoreProperties": true}]
+  },
+  "globals": {
+        "$": false
+  }
+}

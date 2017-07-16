@@ -1,0 +1,73 @@
+@keyframes block-appear {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes article-hover {
+  from {
+    background-color: white;
+    border-bottom: 1px solid #ccc; }
+  to {
+    background-color: #eae6e8;
+    border-bottom: 1px solid #66afe9; } }
+@keyframes article-blur {
+  from {
+    background-color: #eae6e8;
+    border-bottom: 1px solid #66afe9; }
+  to {
+    background-color: white;
+    border-bottom: 1px solid #ccc; } }
+html, body {
+  font-family: Helvetica;
+  position: relative;
+  min-height: 100vh; }
+  html .container .initial-part, body .container .initial-part {
+    padding-top: 20%;
+    margin-bottom: 4rem; }
+    @media (max-width: 48rem) {
+      html .container .initial-part, body .container .initial-part {
+        padding-top: 0; } }
+    html .container .initial-part .random-link, body .container .initial-part .random-link {
+      margin: 3rem 0 3rem; }
+      html .container .initial-part .random-link a, html .container .initial-part .random-link:hover, html .container .initial-part .random-link:active, body .container .initial-part .random-link a, body .container .initial-part .random-link:hover, body .container .initial-part .random-link:active {
+        font-size: 2rem;
+        text-decoration: none;
+        color: #282828; }
+  html .container #container, body .container #container {
+    margin-bottom: 7rem; }
+    html .container #container .text, body .container #container .text {
+      font-size: 2rem; }
+    html .container #container #wrapper, body .container #container #wrapper {
+      text-align: justify;
+      border-bottom: 1px solid #ccc;
+      animation: block-appear 1s forwards ease-out;
+      padding: 0; }
+      html .container #container #wrapper a, body .container #container #wrapper a {
+        display: block;
+        padding: 2rem;
+        margin: 0; }
+        html .container #container #wrapper a h3, body .container #container #wrapper a h3 {
+          margin: 0;
+          padding: 2rem 0 0; }
+        html .container #container #wrapper a p, body .container #container #wrapper a p {
+          margin: 0;
+          padding: 2rem 0 1.5rem; }
+      html .container #container #wrapper:hover, body .container #container #wrapper:hover {
+        animation: article-hover 0.5s forwards ease-in-out; }
+      html .container #container #wrapper:not(:hover), body .container #container #wrapper:not(:hover) {
+        animation: article-blur .5s forwards ease-out; }
+      html .container #container #wrapper a, body .container #container #wrapper a {
+        color: #282828;
+        text-decoration: none; }
+        html .container #container #wrapper a:hover, html .container #container #wrapper a:active, body .container #container #wrapper a:hover, body .container #container #wrapper a:active {
+          text-decoration: none; }
+  html .footer, body .footer {
+    position: absolute;
+    height: 60px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-top: 20px; }
+
+/*# sourceMappingURL=style.css.map */

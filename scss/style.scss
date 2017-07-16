@@ -1,0 +1,147 @@
+@keyframes block-appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes article-hover {
+  from {
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+  }
+  to {
+    background-color: #eae6e8;
+    border-bottom: 1px solid #66afe9;
+  }
+}
+
+@keyframes article-blur {
+  from {
+    background-color: #eae6e8;
+    border-bottom: 1px solid #66afe9;
+
+  }
+  to {
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+
+
+html, body {
+    font-family: Helvetica;
+    position: relative;
+    min-height: 100vh;
+
+    .container {
+
+
+        .initial-part {
+            padding-top: 20%;
+            margin-bottom: 4rem;
+
+            @media (max-width: 48rem) {
+                padding-top: 0;
+            }
+
+            .random-link {
+              margin: 3rem 0 3rem;
+
+              a, &:hover, &:active {
+                font-size: 2rem;
+                text-decoration: none;
+                color: #282828;
+
+              }
+            }
+
+            .form-query {
+
+
+
+              .form-group {
+                //width: 50%;
+                //margin: 0 25%;
+
+                @media (max-width: 48rem) {
+                  //width: 90%;
+                  //margin: 0 5%;
+
+                }
+
+              }
+            }
+
+
+        }
+
+        #container {
+          margin-bottom: 7rem;
+
+          .text {
+            font-size: 2rem;
+        }
+
+            #wrapper {
+                text-align: justify;
+                // background-color: #eee;
+                // padding: 2rem;
+                border-bottom: 1px solid #ccc;
+                animation: block-appear 1s forwards ease-out;
+                padding: 0;
+              a{
+                display: block;
+                padding: 2rem;
+                margin: 0;
+               h3{
+                    margin: 0;
+                    padding: 2rem 0 0;
+                  }
+
+                p {
+                  margin: 0;
+                  padding: 2rem 0 1.5rem;
+                }
+              }
+
+                &:hover {
+                    // background-color: #eae6e8;
+                    animation: article-hover 0.5s forwards ease-in-out;
+                }
+
+                &:not(:hover) {
+                  animation: article-blur .5s forwards ease-out;
+                }
+
+                a{
+                    color: #282828;
+                    text-decoration: none;
+                    &:hover, &:active {
+                        text-decoration: none;
+                    }
+                }
+
+            }
+            &:last-child {
+                //margin-bottom: 3rem;
+            }
+        }
+
+    }
+
+  .footer {
+    position: absolute;
+    height: 60px;
+    // background: red;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    //margin-top: 3rem;
+    padding-top: 20px;
+  }
+
+}
